@@ -1,0 +1,16 @@
+.dashboard h2 {
+    margin: 40px 0px;
+    color: blueviolet;
+}
+
+.parent-charts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    justify-content: center;
+    justify-items: center;
+}
+
+.heading {
+    text-align: center;
+}
