@@ -5,7 +5,7 @@ import './Home.css';
 const Home = () => {
     return (
         <div className='container'>
-            <div className="row row-cols-1 row-cols-md-2 align-items-center justify-content-center">
+            <div className="row row-cols-1 row-cols-md-2 align-items-center justify-content-center my-5">
                 <div className="order-1 order-md-0 text-center text-md-start">
                     <h1 style={{ color: '#126b71' }}>Highest-performing server<br /><span style={{ color: 'tomato' }} >Processors</span> is here</h1>
                     <p>
@@ -16,6 +16,10 @@ const Home = () => {
                 <div className="order-0 order-md-1">
                     <img className='img-fluid' style={{ padding: '20px' }} src={image} alt="" />
                 </div>
+            </div>
+            {/* review section */}
+            <div>
+
             </div>
         </div>
     );

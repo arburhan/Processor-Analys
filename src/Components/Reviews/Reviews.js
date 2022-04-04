@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Review from './Review/Review';
 
 const Reviews = () => {
     const [reviews, setREviews] = useState([]);
@@ -8,11 +9,13 @@ const Reviews = () => {
             .then(data => setREviews(data))
     }, [])
     return (
-        <div>
-            <h2>Review page</h2>
-            {
-                reviews.map(review => console.log(review))
-            }
+        <div className='container text-center'>
+            <h2 className='my-5'>Review page</h2>
+            <div className='row row-cols-1 row-cols-md-3 g-4 text-center justify-content-center'>
+                {
+                    reviews.map(review => <Review key={review.id} review={review}></Review>)
+                }
+            </div>
         </div>
     );
 };
