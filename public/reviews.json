@@ -4,41 +4,41 @@
         "image":"https://unsplash.com/photos/8EW9qpWZF7E",
         "name":"Mr Tom",
         "rating":4.5,
-        "review":"lorem"
+        "review":"Interesting CPUs. Regarding the 72F3, the part for highest per-core performance: Dating myself here, but I recall working with an Oracle DB that was licensed/billed on a per-core or per-thread basis (forgot which one it was)."
     },
     {
         "id":2,
         "image":"https://unsplash.com/photos/papFbO2Kl4Q",
         "name":"Mr Tom",
         "rating":5,
-        "review":"lorem"
+        "review":"More workstation than server, but companies like Ansys still require additional license packs to go beyond 4 cores with some of their tools, and they often come with hefty 5-figure price tags depending on the program and your organizations bargaining ability."
     },
     {
         "id":3,
         "image":"https://unsplash.com/photos/rW-I87aPY5Y",
         "name":"Mr Tom",
         "rating":4.2,
-        "review":"lorem"
+        "review":"Reminds me of the inn keeper from Les Miserables. Nice to your face with lots of good promises but then tries to squeeze more money out of the customer at every turn."
     },
     {
         "id":4,
         "image":"https://unsplash.com/photos/6XcziMmkNgQ",
         "name":"Mr Tom",
         "rating":5,
-        "review":"lorem"
+        "review":"I think that Ice Lake being on the non-SF process actually bodes extremely well for Sapphire Rapids because Ice Lake even in laptops is just not that good from a mfg perspective. It's basically Intel 10nm's first shippable and salvaged process. Super Fin appears far, far better in Tiger Lake versus Ice Lake, and so an improvement on top of that thusly should perhaps finally bring Intel's mfg in line with TSMC 7nm."
     },
     {
         "id":5,
         "image":"https://unsplash.com/photos/G3_ijrNF_cU",
         "name":"Mr Tom",
         "rating":4,
-        "review":"lorem"
+        "review":"We know that Intel watches the Anandtech website, and that you are aware of this, they also send you expensive hardware for testing, and hope that the results will be more favourable to their new development (e.g. 8320) which they have been working on for a long time. I think it would be unpleasant and uncomfortable to criticise their new products harshly if I were writing a review, but I would rather gently point out which is good at what, which is leading and which still needs to catch up. "
     },
     {
         "id":6,
         "image":"https://unsplash.com/photos/so5nsYDOdxw",
         "name":"Mr Tom",
         "rating":3.5,
-        "review":"lorem"
+        "review":"What the hell did I just read? Just came across this, I had no idea the enterprise side was this fucked. They are scalping the ungodly dog shit out of their own customers. So you obviously can't duplicate their software in house meaning you're forced to use their software to be competitive, that seems to be the gist. "
     }
 ]
