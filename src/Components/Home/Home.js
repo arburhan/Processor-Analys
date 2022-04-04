@@ -3,9 +3,14 @@ import image from './images/AMD.jpg'
 import './Home.css';
 import useReviews from '../Hooks/useReviews';
 import Review from '../Reviews/Review/Review';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [reviews, setREviews] = useReviews();
+    // navigate
+    let navigate = useNavigate();
+    let location = useLocation();
+
     return (
         <div className='container'>
             <div className="row row-cols-1 row-cols-md-2 align-items-center justify-content-center my-5">
@@ -27,7 +32,10 @@ const Home = () => {
                     {
                         reviews.slice(0, 3).map(review => <Review key={review.id} review={review}></Review>)
                     }
+                    <button onClick={() => {
+                        navigate("/reviews" + location.search)
 
+                    }} className="watch-button">See All Review</button>
                 </div>
             </div>
         </div>
