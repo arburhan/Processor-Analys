@@ -1,8 +1,11 @@
 import React from 'react';
 import image from './images/AMD.jpg'
 import './Home.css';
+import useReviews from '../Hooks/useReviews';
+import Review from '../Reviews/Review/Review';
 
 const Home = () => {
+    const [reviews, setREviews] = useReviews();
     return (
         <div className='container'>
             <div className="row row-cols-1 row-cols-md-2 align-items-center justify-content-center my-5">
@@ -19,7 +22,13 @@ const Home = () => {
             </div>
             {/* review section */}
             <div>
+                <h2 className='my-5'>Reviews</h2>
+                <div className='row row-cols-1 row-cols-md-3 g-4 text-center justify-content-center'>
+                    {
+                        reviews.slice(0, 3).map(review => <Review key={review.id} review={review}></Review>)
+                    }
 
+                </div>
             </div>
         </div>
     );

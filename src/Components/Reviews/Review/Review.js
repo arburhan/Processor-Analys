@@ -16,7 +16,7 @@ const Review = (props) => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="">{rating}</small>
+                        <small className="">Rating: {rating}</small>
                     </Card.Footer>
                 </Card>
 
