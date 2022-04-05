@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 import useChartData from '../Hooks/useChartData';
 import './Dashboard.css';
@@ -51,6 +50,8 @@ const Dashboard = () => {
                 <h3>Revenue report</h3>
                 <Piechart></Piechart>
             </div>
+            {/* area chart */}
+
         </div>
     );
 };
