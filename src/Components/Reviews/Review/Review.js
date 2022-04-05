@@ -13,9 +13,9 @@ const Review = (props) => {
                     <Card.Body>
                         <Card.Title className='fw-bold fs-4'>{name}</Card.Title>
                         <Card.Text title={review}>
-                            <blockquote>
-                                {shortReview}
-                            </blockquote>
+
+                            {shortReview}
+
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
