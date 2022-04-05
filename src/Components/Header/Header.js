@@ -5,11 +5,17 @@ import './Header.css';
 const Header = () => {
     return (
         <nav>
-            <CustomLink className='home' to='/home'>Home</CustomLink>
-            <CustomLink to='/reviews'>Review</CustomLink>
-            <CustomLink to='/dashboard'>Dashboard</CustomLink>
-            <CustomLink to='/blogs'>Blogs</CustomLink>
-            <CustomLink to='/about'>About</CustomLink>
+            <div>
+                <CustomLink style={{ color: 'rgb(18, 107, 113', textDecoration: 'none' }} className="site-name" to='/'>Processor Analys</CustomLink>
+            </div>
+            <div className='child-nav'>
+                <CustomLink style={{ display: 'none' }} to='/'></CustomLink>
+                <CustomLink className='home' to='/home'>Home</CustomLink>
+                <CustomLink to='/reviews'>Review</CustomLink>
+                <CustomLink to='/dashboard'>Dashboard</CustomLink>
+                <CustomLink to='/blogs'>Blogs</CustomLink>
+                <CustomLink to='/about'>About</CustomLink>
+            </div>
         </nav>
     );
 };
