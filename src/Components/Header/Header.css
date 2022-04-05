@@ -3,6 +3,8 @@ nav {
     flex-direction: row;
     justify-content: center;
     color: black;
+    background-color: rgba(255, 228, 196, 0.616);
+    padding: 10px 0px;
 }
 
 nav a {
