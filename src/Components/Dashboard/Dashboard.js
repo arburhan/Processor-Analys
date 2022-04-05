@@ -16,7 +16,7 @@ const Dashboard = () => {
             <div className='parent-charts'>
                 <div>
                     <h3 className='heading'>All reports</h3>
-                    <LineChart width={600} height={350} data={chartsData}>
+                    <LineChart width={600} height={350} className="line-chart" data={chartsData}>
                         <Line type={'monotone'} dataKey='revenue'></Line>
                         <Line type={'monotone'} dataKey='sell' stroke="#82ca9d"></Line>
                         <XAxis dataKey="month"></XAxis>

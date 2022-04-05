@@ -17,3 +17,14 @@ nav a:hover {
 .home:active {
     color: #1dbf73;
 }
+
+/* responsive */
+@media screen and (max-width:668px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -3,6 +3,11 @@
     color: blueviolet;
 }
 
+.line-chart {
+    height: 350px;
+    width: 600px;
+}
+
 .parent-charts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,4 +18,17 @@
 
 .heading {
     text-align: center;
+}
+
+/* responsive */
+@media screen and (max-width:668px) {
+    .parent-charts {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        justify-items: center;
+    }
+
+
 }

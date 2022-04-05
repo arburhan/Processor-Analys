@@ -10,7 +10,7 @@ const Review = (props) => {
                 <Card className=''>
                     <Card.Img className='card-image' style={{ borderRadius: '50%' }} src={image} />
                     <Card.Body>
-                        <Card.Title>{name}</Card.Title>
+                        <Card.Title className='fw-bold fs-4'>{name}</Card.Title>
                         <Card.Text>
                             {review}
                         </Card.Text>
