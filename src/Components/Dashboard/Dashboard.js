@@ -12,7 +12,7 @@ const Dashboard = () => {
             <div className='parent-charts'>
                 <div>
                     <h3 className='heading'>All reports</h3>
-                    <LineChart width={500} height={350} className="line-chart" data={chartsData}>
+                    <LineChart width={400} height={350} className="line-chart" data={chartsData}>
                         <Line type={'monotone'} dataKey='revenue'></Line>
                         <Line type={'monotone'} dataKey='sell' stroke="#82ca9d"></Line>
                         <XAxis dataKey="month"></XAxis>
@@ -24,7 +24,7 @@ const Dashboard = () => {
                 <div>
                     <h3 className='heading'>Selling report</h3>
                     <BarChart
-                        width={500}
+                        width={400}
                         height={350}
                         data={chartsData}
                         margin={{
@@ -44,12 +44,13 @@ const Dashboard = () => {
                         <Bar dataKey="sell" fill="#82ca9d" />
                     </BarChart>
                 </div>
+                {/* pie chart */}
+                <div>
+                    <h3>Revenue report</h3>
+                    <Piechart></Piechart>
+                </div>
             </div>
-            {/* pie chart */}
-            <div>
-                <h3>Revenue report</h3>
-                <Piechart></Piechart>
-            </div>
+
             {/* area chart */}
 
         </div>

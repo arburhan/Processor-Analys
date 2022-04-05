@@ -3,11 +3,6 @@
     color: blueviolet;
 }
 
-.line-chart {
-    height: 350px;
-    width: 600px;
-}
-
 .parent-charts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
