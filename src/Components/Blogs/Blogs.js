@@ -11,7 +11,7 @@ const Blogs = () => {
     }, [])
     return (
         <div>
-            <h2 className='text-center my-5'>This is blog section</h2>
+            <h2 className='text-center my-5' style={{ color: 'blueviolet' }}>This is blog section</h2>
             <p>Question & answer is here :)</p>
             <div>
                 {

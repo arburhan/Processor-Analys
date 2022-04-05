@@ -5,7 +5,6 @@ import Piechart from './PieChart/Piechart';
 
 const Dashboard = () => {
     const [chartsData, setChartsData] = useChartData();
-    console.log(chartsData);
     return (
         <div className='dashboard heading'>
             <h2>Dashboard</h2>
