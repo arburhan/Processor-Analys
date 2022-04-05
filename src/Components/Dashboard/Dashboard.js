@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import useChartData from '../Hooks/useChartData';
 import './Dashboard.css';
+import Piechart from './PieChart/Piechart';
 
 const Dashboard = () => {
-    const [chartsData, setChartsData] = useState([]);
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setChartsData(data))
-    }, [])
+    const [chartsData, setChartsData] = useChartData();
     console.log(chartsData);
     return (
         <div className='dashboard heading'>
@@ -16,7 +13,7 @@ const Dashboard = () => {
             <div className='parent-charts'>
                 <div>
                     <h3 className='heading'>All reports</h3>
-                    <LineChart width={600} height={350} className="line-chart" data={chartsData}>
+                    <LineChart width={500} height={350} className="line-chart" data={chartsData}>
                         <Line type={'monotone'} dataKey='revenue'></Line>
                         <Line type={'monotone'} dataKey='sell' stroke="#82ca9d"></Line>
                         <XAxis dataKey="month"></XAxis>
@@ -28,7 +25,7 @@ const Dashboard = () => {
                 <div>
                     <h3 className='heading'>Selling report</h3>
                     <BarChart
-                        width={600}
+                        width={500}
                         height={350}
                         data={chartsData}
                         margin={{
@@ -48,6 +45,11 @@ const Dashboard = () => {
                         <Bar dataKey="sell" fill="#82ca9d" />
                     </BarChart>
                 </div>
+            </div>
+            {/* pie chart */}
+            <div>
+                <h3>Revenue report</h3>
+                <Piechart></Piechart>
             </div>
         </div>
     );
