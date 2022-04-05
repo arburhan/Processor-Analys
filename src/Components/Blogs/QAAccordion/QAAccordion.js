@@ -9,7 +9,7 @@ const Accordion = (props) => {
     return (
         <div>
             <AccordionItem>
-                <AccordionHeader>{question}</AccordionHeader>
+                <AccordionHeader><h4>{question}</h4></AccordionHeader>
                 <AccordionBody>
                     {answer}
                 </AccordionBody>

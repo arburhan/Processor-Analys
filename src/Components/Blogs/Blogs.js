@@ -11,7 +11,8 @@ const Blogs = () => {
     }, [])
     return (
         <div>
-            <h2>This is blog section</h2>
+            <h2 className='text-center my-5'>This is blog section</h2>
+            <p>Question & answer is here :)</p>
             <div>
                 {
                     qas.map(qa => <QAAccordion key={qa.id} qa={qa}></QAAccordion>)
