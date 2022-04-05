@@ -12,8 +12,9 @@ const Blogs = () => {
     return (
         <div>
             <h2 className='text-center my-5' style={{ color: 'blueviolet' }}>This is blog section</h2>
-            <p>Question & answer is here :)</p>
-            <div>
+            <div className='container' >
+                <p>Question & answer is here :)</p>
+
                 {
                     qas.map(qa => <QAAccordion key={qa.id} qa={qa}></QAAccordion>)
 
